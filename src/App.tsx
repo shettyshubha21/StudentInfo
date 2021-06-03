@@ -14,7 +14,7 @@ function App() {
 
   const studentInfo = students.filter(student =>
     student.name.toLowerCase().includes(searchTerm.toLowerCase())
-    //student info
+    //student info for branch demo
   );
 
   return (
