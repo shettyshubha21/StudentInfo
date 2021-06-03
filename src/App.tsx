@@ -7,7 +7,7 @@ import SearchField from "./components/SearchField/SearchField";
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const onChange = (event:any) => {
+  const onChangeFunction = (event:any) => {
     let keyword = event.target.value
     setSearchTerm(keyword);
   };
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchField text={searchTerm} onChange={onChange}/>
+      <SearchField text={searchTerm} onChange={onChangeFunction}/>
       <h1>hello</h1>
       <Student display={studentInfo} />
     </div>
