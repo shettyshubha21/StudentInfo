@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <SearchField text={searchTerm} onChange={onChange}/>
+      <h1>hello</h1>
       <Student display={studentInfo} />
     </div>
   );
